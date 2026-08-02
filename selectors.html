@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Resume</title>
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#e6e6e6;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:30px;
+
+}
+
+.resume{
+
+    width:1000px;
+
+    display:flex;
+
+    background:white;
+
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+
+}
+
+/* Left Side */
+
+.left{
+
+    width:30%;
+
+    background:#2c3e50;
+
+    color:white;
+
+    padding:30px;
+
+}
+
+.left img{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border:5px solid white;
+
+}
+
+.left h2{
+
+    text-align:center;
+
+}
+
+.left p{
+
+    text-align:center;
+
+    margin:8px 0;
+
+}
+
+.left h3{
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+}
+
+.left ul{
+
+    margin-left:20px;
+
+}
+
+.left li{
+
+    margin:8px 0;
+
+}
+
+hr{
+
+    margin:20px 0;
+
+}
+
+/* Right Side */
+
+.right{
+
+    width:70%;
+
+    padding:40px;
+
+}
+
+.right section{
+
+    margin-bottom:30px;
+
+}
+
+.right h2{
+
+    color:#2c3e50;
+
+    border-bottom:3px solid #3498db;
+
+    padding-bottom:5px;
+
+    margin-bottom:15px;
+
+}
+
+.box{
+
+    background:#f5f5f5;
+
+    padding:15px;
+
+    border-left:5px solid #3498db;
+
+    margin-bottom:15px;
+
+}
+
+.box h3{
+
+    color:#34495e;
+
+    margin-bottom:8px;
+
+}
+
+.right ul{
+
+    margin-left:20px;
+
+}
+
+.right li{
+
+    margin:10px 0;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.resume{
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+.left,
+.right{
+
+    width:100%;
+
+}
+
+.left img{
+
+    width:140px;
+
+    height:140px;
+
+}
+
+}
+    </style>
+
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- Left Section -->
+
+    <div class="left">
+
+        <!-- <img src="c:\Users\malli\OneDrive\Desktop\my files\MYPIC2.jpg" alt="Profile Picture"> -->
+
+        <h2>Mallika Chiraga</h2>
+
+        <p>Python Developer</p>
+
+        <hr>
+
+        <h3>Contact</h3>
+
+        <p>📞 +91 9876543210</p>
+
+        <p>📧 mallika@email.com</p>
+
+        <p>📍 Andhra Pradesh, India</p>
+
+        <hr>
+
+        <h3>Skills</h3>
+
+        <ul>
+
+            <li>Python</li>
+
+            <li>Java</li>
+
+            <li>HTML</li>
+
+            <li>CSS</li>
+
+            <li>SQL</li>
+
+            <li>Power BI</li>
+
+        </ul>
+
+        <hr>
+
+        <h3>Languages</h3>
+
+        <ul>
+
+            <li>English</li>
+
+            <li>Telugu</li>
+
+            <li>Hindi</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Right Section -->
+
+    <div class="right">
+
+        <section>
+
+            <h2>Career Objective</h2>
+
+            <p>
+                Motivated Computer Science student with strong knowledge of
+                Python, Java, SQL, HTML, CSS, and Power BI. Looking for an
+                opportunity to apply my skills, learn new technologies, and
+                contribute to organizational growth.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Education</h2>
+
+            <div class="box">
+
+                <h3>B.Tech - Computer Science Engineering</h3>
+
+                <p>XYZ College</p>
+
+                <p>2022 - 2026</p>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Intermediate</h3>
+
+                <p>ABC Junior College</p>
+
+                <p>2020 - 2022</p>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Projects</h2>
+
+            <div class="box">
+
+                <h3>AI Powered Resume Job Fit Preparation System</h3>
+
+                <p>
+                    Developed a web application that analyzes resumes,
+                    compares them with job descriptions, and provides
+                    interview preparation suggestions using AI.
+                </p>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Smart Personal Finance Dashboard</h3>
+
+                <p>
+                    Designed an interactive dashboard to track income,
+                    expenses, savings, and budgets using Python and Power BI.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Certifications</h2>
+
+            <ul>
+
+                <li>NPTEL Programming in Java</li>
+
+                <li>SQL Certification</li>
+
+                <li>Python Programming</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Achievements</h2>
+
+            <ul>
+
+                <li>CodeChef Silver Badge (400+ Problems)</li>
+
+                <li>Diamond Badge - 100 Days Coding Challenge</li>
+
+                <li>HackerRank 4★ in C</li>
+
+                <li>HackerRank 3★ in Java</li>
+
+                <li>HackerRank 3★ in SQL</li>
+
+            </ul>
+
+        </section>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
