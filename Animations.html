@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Equalizer</title>
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#111;
+}
+
+.container{
+    width:500px;
+    height:300px;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(255,255,255,0.2);
+}
+
+.equalizer{
+    display:flex;
+    gap:6px;
+    align-items:flex-end;
+    height:220px;
+}
+
+.equalizer p{
+    width:12px;
+    height:60px;
+    border-radius:5px;
+    background:linear-gradient(to top,
+    red,
+    orange,
+    yellow,
+    lime,
+    cyan,
+    blue,
+    violet);
+    animation:music 1s ease-in-out infinite;
+    animation-delay:calc(0.08s * var(--i));
+}
+
+@keyframes music{
+    0%,100%{
+        height:30px;
+    }
+
+    20%{
+        height:80px;
+    }
+
+    40%{
+        height:180px;
+    }
+
+    60%{
+        height:120px;
+    }
+
+    80%{
+        height:200px;
+    }
+}
+</style>
+    
+</head>
+
+<body>
+
+<div class="container">
+    <div class="equalizer">
+        <p style="--i:1"></p>
+        <p style="--i:2"></p>
+        <p style="--i:3"></p>
+        <p style="--i:4"></p>
+        <p style="--i:5"></p>
+        <p style="--i:6"></p>
+        <p style="--i:7"></p>
+        <p style="--i:8"></p>
+        <p style="--i:9"></p>
+        <p style="--i:10"></p>
+        <p style="--i:11"></p>
+        <p style="--i:12"></p>
+        <p style="--i:13"></p>
+        <p style="--i:14"></p>
+        <p style="--i:15"></p>
+        <p style="--i:16"></p>
+        <p style="--i:17"></p>
+        <p style="--i:18"></p>
+    </div>
+</div>
+
+</body>
+</html>>
